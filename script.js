@@ -23,7 +23,15 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 function goStore() {
-  console.log('Going to store.');
+  button1.innerText = 'Buy 10 health (10 gold)';
+  button2.innerText = 'Buy weapon (30 gold)';
+  button3.innerText = 'Go to town square';
+
+  button1.onclick = buyHealth;
+  button2.onclick = buyWeapon;
+  button3.onclick = goTown;
+
+  text.innerText = "You enter the store.";
 }
 
 function goCave() {
@@ -34,9 +42,19 @@ function fightDragon() {
   console.log('Fighting dragon.');
 }
 
-/*
-Step 37
-Using the same syntax, set the onclick properties of button2 and button3 to goCave and fightDragon respectively.
+function buyHealth() {
+  
+}
 
-Once you have done that, open your console and try clicking the buttons on your project.
+function buyWeapon() {
+  
+}
+
+function goTown() {
+  
+}
+
+/*
+Step 43
+Move your goTown function above your goStore function. Then copy and paste the contents of the goStore function into the goTown function.
 */
